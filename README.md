@@ -1,6 +1,6 @@
 # first-strapi-project
 
-Aplicação back-end que gerencia contas bancárias básicas
+Aplicação de estudo backend que contém os principais conceitos que constituem o framework Strapi
 
 ## Tecnologias
 
