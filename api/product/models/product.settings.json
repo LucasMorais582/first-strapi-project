@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Products",
+  "info": {
+    "name": "Product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100,
+      "minLength": 3
+    },
+    "Price": {
+      "type": "decimal",
+      "required": true
+    },
+    "User_id": {
+      "columnName": "User_id",
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "Product_id"
+    }
+  }
+}
